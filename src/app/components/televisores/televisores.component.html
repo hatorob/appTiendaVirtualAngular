@@ -1,0 +1,30 @@
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let televisor of televisores; let i = index">
+      <div class="card h-100">
+        <img [src]="televisor.img" class="card-img-top" alt="..." width="250" height="250">
+        <div class="card-body">
+          <h5 class="card-title"> {{ televisor.referencia }} </h5>
+          <p class="card-text"> {{televisor.bio}} </p>
+          <hr>
+            <p>${{televisor.precio}}</p>
+          <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <span class="badge bg-primary">{{ televisor.referencia }}</span>
+            </div>
+            <div class="col-md-4">
+                <span class="badge bg-danger"> {{televisor.caracteristicas.tamano}}  </span>
+               
+            </div>
+            <div class="col-md-12">
+                <span class="badge bg-warning">{{televisor.caracteristicas.tecnologia}} </span>      
+            </div>
+        </div>
+        <br>
+        <a href="" class="btn btn-outline-success" >Ver más...</a>
+      </div>
+    </div>
+</div>
