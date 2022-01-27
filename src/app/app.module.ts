@@ -13,6 +13,8 @@ import { RopaComponent } from './components/ropa/ropa.component';
 import { OrdenadoresComponent } from './components/ordenadores/ordenadores.component';
 //services
 import { TelevisoresService } from './servicios/televisores.service';
+import { RutasService } from './servicios/rutas.service';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { TelevisoresService } from './servicios/televisores.service';
     APP_ROUTING
   ],
   providers: [
-    TelevisoresService
+    TelevisoresService,
+    RutasService
   ],
   bootstrap: [AppComponent]
 })
