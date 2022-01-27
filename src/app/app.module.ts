@@ -13,6 +13,7 @@ import { RopaComponent } from './components/ropa/ropa.component';
 import { OrdenadoresComponent } from './components/ordenadores/ordenadores.component';
 //services
 import { TelevisoresService } from './servicios/televisores.service';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TelevisoresService } from './servicios/televisores.service';
     HomeComponent,
     TelevisoresComponent,
     RopaComponent,
-    OrdenadoresComponent
+    OrdenadoresComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
